@@ -1,6 +1,7 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { Main, Gallery, Projects } from "./pages";
 
 import "./App.css";
 
@@ -8,7 +9,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Footer />
+
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </>
   );
 }

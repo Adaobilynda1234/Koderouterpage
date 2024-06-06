@@ -1,0 +1,66 @@
+/* Container for the images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Adjust the gap to control space between images */
+  margin: 0 auto;
+  max-width: 900px; /* Adjust max-width as needed */
+}
+.light {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 3rem;
+  padding-top: 1em;
+  font-weight: light;
+  font-family: "Roboto";
+  letter-spacing: 5px;
+}
+.heavy {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-family: "Roboto";
+}
+
+/* Style for individual images */
+.image-container img {
+  width: calc(20% - 10px); /* Subtract the gap to ensure equal spacing */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .image-container img {
+    width: calc(
+      25% - 10px
+    ); /* Adjust to 4 images per row for smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .image-container img {
+    width: calc(
+      33.33% - 10px
+    ); /* Adjust to 3 images per row for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .image-container img {
+    width: calc(
+      50% - 10px
+    ); /* Adjust to 2 images per row for even smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .image-container img {
+    width: calc(
+      100% - 10px
+    ); /* Adjust to 1 image per row for the smallest screens */
+  }
+}
