@@ -1,0 +1,43 @@
+.footer_container {
+  background-color: #2c2c2c;
+  color: #ffff;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.footer_links li {
+  margin-bottom: 0.8em;
+}
+.footer_contacts h4 {
+  margin-bottom: 1em;
+}
+.span {
+  display: flex;
+}
+.span p {
+  margin-left: 0.8em;
+  margin-bottom: 2em;
+}
+
+.footer_socials h4 {
+  margin-bottom: 1em;
+}
+.footer_socials .span {
+  display: flex;
+  justify-content: space-between;
+}
