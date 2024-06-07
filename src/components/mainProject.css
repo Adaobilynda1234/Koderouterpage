@@ -1,0 +1,101 @@
+/* src/ImageGrid.css */
+.mainproject_container {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 3em 3em;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.mainproject_heading {
+  font-size: 2em;
+  text-align: left;
+  font-weight: 200;
+  letter-spacing: 3px;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+.mainproject_imagegrid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "image1 image1 image2 image2"
+    "image3 image4 image4 image5";
+}
+.mainproject_griditem {
+  position: relative;
+  width: 100%;
+}
+
+.mainproject_imagegrid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sample_project_img {
+  position: absolute;
+}
+.sample_project {
+  position: relative;
+  color: #fff;
+  top: 80px;
+  left: -90px;
+}
+.sample_project h3 {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+.sample_project p {
+  font-size: 100;
+  font-size: 0.7rem;
+  letter-spacing: 2;
+  margin: 0;
+}
+.mainproject_container button {
+  padding: 0.7em 1.4em;
+  background-color: black;
+  color: #fff;
+  margin-top: 5em;
+  position: absolute;
+  bottom: 0px;
+  right: 45px;
+}
+
+@media (max-width: 768px) {
+  .mainproject_imagegrid {
+    grid-template-areas:
+      "image1"
+      "image2"
+      "image3"
+      "image4"
+      "image5";
+  }
+}
+
+@media (min-width: 769px) {
+  .mainproject_imagegrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .mainproject_griditem:nth-child(1) {
+    grid-area: image1;
+  }
+  .mainproject_griditem:nth-child(2) {
+    grid-area: image2;
+  }
+  .mainproject_griditem:nth-child(3) {
+    grid-area: image3;
+  }
+  .mainproject_griditem:nth-child(4) {
+    grid-area: image4;
+  }
+  .mainproject_griditem:nth-child(5) {
+    grid-area: image5;
+  }
+}

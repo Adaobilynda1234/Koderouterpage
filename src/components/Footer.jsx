@@ -53,6 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <p>© 2021 All Rights Reserved</p>
     </div>
   );
 };

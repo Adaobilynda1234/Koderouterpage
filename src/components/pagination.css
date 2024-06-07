@@ -19,8 +19,10 @@
 .pagination a {
   color: #333;
   float: left;
-  padding: 1em 3em;
+  padding: 0.5em 1em;
   text-decoration: none;
+  border: 1px dotted gray;
+  margin-right: 1em;
   font-family: inherit;
   font-size: 1rem;
 }

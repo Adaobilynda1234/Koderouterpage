@@ -1,0 +1,55 @@
+/* App.css */
+
+.statement_container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+  font-family: "Roboto", sans-serif;
+  background-color: #fbfbfb;
+  margin-top: 2em;
+}
+
+.statement_heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  font-family: inherit;
+}
+
+.statement_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.statement_item {
+  flex: 1 1 45%; /* Take 45% of the width with some space for gap */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.statement_image {
+  width: 15%;
+  height: auto;
+}
+
+.statement_writeup {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .statement_item {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+}

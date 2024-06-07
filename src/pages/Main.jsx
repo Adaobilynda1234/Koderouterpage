@@ -1,11 +1,20 @@
 import React from "react";
-import Pagination from "../components/Pagination";
+import Hero from "../components/MainHero";
+import MainAbout from "../components/MainAbout";
+import MainStatement from "../components/MainStatement";
+import MainProjects from "../components/MainProjects";
+import MainContact from "../components/MainContact";
+import Footer from "../components/Footer";
 
 const Main = () => {
   return (
     <div>
-      <h1>This is home page</h1>
-      <Pagination />
+      <Hero />
+      <MainAbout />
+      <MainStatement />
+      <MainProjects />
+      <MainContact />
+      <Footer />
     </div>
   );
 };
