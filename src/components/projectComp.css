@@ -1,0 +1,85 @@
+.project_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px; /* Adjust max-width as needed */
+  font-family: "Roboto", sans-serif;
+  gap: 20px;
+}
+
+.light {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding-top: 1em;
+  font-weight: light;
+  font-family: inherit;
+}
+.heavy {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-family: inherit;
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  height: 300px;
+}
+
+.text {
+  width: 50%;
+  background-color: #fbfbfb;
+  padding: 22px;
+  height: 300px;
+}
+.text_title {
+  font-size: 2rem;
+  padding: 0.2em 0.3em;
+  margin-bottom: 0.7em;
+  font-weight: 200;
+}
+.text_content {
+  font-size: 0.8rem;
+  padding: 1.8em 0.5em;
+  line-height: 1.5;
+  max-width: 85%;
+  margin-bottom: 0.7em;
+  font-weight: 400;
+}
+
+.text_button {
+  padding: 1em 2em;
+  font-family: inherit;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  background-color: #ffff;
+  border: 2px solid #ffff;
+  border-radius: 5px;
+}
+.text_button svg {
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  width: 25px;
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .image,
+  .text {
+    width: 100%;
+  }
+
+  .text {
+    padding: 10px;
+  }
+}

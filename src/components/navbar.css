@@ -20,25 +20,58 @@ nav {
 /* .nav_logo img {
   width: 100%;
 } */
-nav ul {
+.navlink {
   display: flex;
   justify-content: space-between;
 }
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
 
-ul li {
+.navlink li {
   list-style: none;
   margin-left: 1.5em;
   padding-left: 1em;
 }
 
-ul li a {
+.navlink li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8rem;
   color: #000;
 }
 
-ul li a:hover {
+.navlink li a:hover {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+}
+
+@media (max-width: 664px) {
+  .menu-icon {
+    display: block;
+  }
+  /* .menu-icon svg {
+    color: red;
+  } */
+  .navlink {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .navlink.open {
+    transform: translateX(0);
+  }
+  .navlink li {
+    margin: 20px 0;
+  }
 }

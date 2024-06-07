@@ -1,0 +1,35 @@
+.pagination {
+  display: inline-block;
+  max-width: 900px; /* Adjust max-width as needed */
+  margin-left: 15em;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.pagination .big {
+  color: #333;
+  float: left;
+  padding: 4em 0.8em;
+  text-decoration: none;
+  border: 0.2px thin gray;
+  margin-right: 2em;
+
+  font-weight: bold;
+}
+
+.pagination a {
+  color: #333;
+  float: left;
+  padding: 1em 3em;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}

@@ -6,6 +6,7 @@
   gap: 10px; /* Adjust the gap to control space between images */
   margin: 0 auto;
   max-width: 900px; /* Adjust max-width as needed */
+  font-family: "Roboto", sans-serif;
 }
 .light {
   max-width: 900px;
@@ -13,7 +14,7 @@
   font-size: 3rem;
   padding-top: 1em;
   font-weight: light;
-  font-family: "Roboto";
+  font-family: inherit;
   letter-spacing: 5px;
 }
 .heavy {
@@ -22,7 +23,7 @@
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 5px;
-  font-family: "Roboto";
+  font-family: inherit;
 }
 
 /* Style for individual images */
